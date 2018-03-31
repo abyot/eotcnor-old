@@ -1,0 +1,23 @@
+.main-margin {
+    margin-top: 20px;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.component>a {
+    padding: 2px;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300 !Important;
+    color: #bc1717;
+}
+
+.component:hover {
+    background-color: #e9ecef;
+}
