@@ -39,13 +39,11 @@
         <div [ngClass]="{'is-invalid': (form.controls.password.errors && form.controls.password.dirty), 'is-valid': !form.controls.password.errors}">
             <input type="password" name="password" class="form-control" autocomplete="off" placeholder="*Password" formControlName="password" />
             <!-- Validation -->
-            <div class="invalid-feedback">
-                <ul class="help-block">
-                    <li *ngIf="form.controls.password.errors?.required && form.controls.password.dirty">This field is required</li>
-                    <li *ngIf="form.controls.password.dirty && (form.controls.password.errors?.minlength || form.controls.password.errors?.maxlength)">Minimum characters: 8, Maximum characters: 35</li>
-                    <li *ngIf="form.controls.password.errors?.validatePassword && form.controls.password.dirty">Password must have at least one uppercase, lowercase, special character, and number</li>
-                </ul>
-            </div>
+            <ul class="help-block">
+                <li *ngIf="form.controls.password.errors?.required && form.controls.password.dirty">This field is required</li>
+                <li *ngIf="form.controls.password.dirty && (form.controls.password.errors?.minlength || form.controls.password.errors?.maxlength)">Minimum characters: 8, Maximum characters: 35</li>
+                <li *ngIf="form.controls.password.errors?.validatePassword && form.controls.password.dirty">Password must have at least one uppercase, lowercase, special character, and number</li>
+            </ul>
         </div>
     </div>
 
